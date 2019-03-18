@@ -43,10 +43,11 @@ vendor.voice.voip.conc.disabled=true
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
-persist.vendor.bluetooth.modem_nv_support=true \
 persist.vendor.bt.enable.splita2dp=false \
 persist.vendor.btstack.a2dp_offload_cap=sbc-aac-aptx-aptxhd \
-vendor.qcom.bluetooth.soc=smd
+vendor.qcom.bluetooth.soc=smd \
+ro.vendor.qualcomm.bt.hci_transport=smd \
+ro.bluetooth.hfp.ver=1.7
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
